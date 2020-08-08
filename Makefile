@@ -2,9 +2,7 @@ NAME=manga
 VERSION=v1.0
 DOCKER_RUN_OPTIONS= \
 	--privileged \
-	--net=docker-lan \
-	--ip=192.168.100.104 \
-	-p 3307:3306 \
+	-p 80:80 \
 	-v `pwd`/comics:/var/www/comics \
 	-v `pwd`/src:/var/www/server
 
